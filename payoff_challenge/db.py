@@ -22,5 +22,14 @@ rows = cur.fetchall()
 
 print 'Total loan amount : $ ' + str(rows[0][0])
 
+cur.execute("""SELECT *
+FROM lending_club_2007_2011
+LIMIT 1""")
+
+rows = cur.fetchall()
+
+print 'Total loan amount : $ ' + str(rows[0])
+
 
 print 'Done'
+

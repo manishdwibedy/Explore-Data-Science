@@ -69,7 +69,7 @@ for row in rows:
         print 'Amount $: ' + amount
 
 
-print '\n\nAverage Monthly Loan Amount :'
+print '\n\nNumber of grades :'
 cur.execute("""SELECT COUNT(*) from lending_club_2007_2011 GROUP BY grade""")
 
 rows = cur.fetchall()

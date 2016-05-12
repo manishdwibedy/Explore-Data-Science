@@ -20,7 +20,7 @@ cur.execute("""SELECT SUM(funded_amnt) from lending_club_2007_2011""")
 
 rows = cur.fetchall()
 
-print 'Total loan amount : ' + str(rows[0][0])
+print 'Total loan amount : $ ' + str(rows[0][0])
 
 
 print 'Done'

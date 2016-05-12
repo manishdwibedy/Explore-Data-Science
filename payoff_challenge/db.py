@@ -42,5 +42,18 @@ for row in rows:
         print 'Month : ' + month
         print 'Amount $: ' + amount
 
+print '\n\nAverage Monthly Loan Amount :'
+cur.execute("""SELECT AVG(funded_amnt),issue_d from lending_club_2007_2011 GROUP BY issue_d ORDER BY issue_d DESC """)
+
+rows = cur.fetchall()
+
+for row in rows:
+    month = str(row[1])
+    amount = str(row[0])
+    if row[0]:
+        print 'Month : ' + month
+        print 'Amount $: ' + amount
+
+
 print 'Done'
 

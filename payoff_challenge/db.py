@@ -34,7 +34,9 @@ cur.execute("""SELECT AVG(funded_amnt),issue_d from lending_club_2007_2011 GROUP
 
 rows = cur.fetchall()
 
-print 'Total loan amount : $ ' + str(rows[0][0])
+for row in rows:
+    print 'Month : ' + str(row[1])
+    print 'Amount $: ' + str(row[0])
 
 print 'Done'
 

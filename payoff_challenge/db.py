@@ -35,8 +35,11 @@ cur.execute("""SELECT SUM(funded_amnt),issue_d from lending_club_2007_2011 GROUP
 rows = cur.fetchall()
 
 for row in rows:
-    print 'Month : ' + str(row[1])
-    print 'Amount $: ' + str(row[0])
+    month = str(row[1])
+    amount = str(row[0])
+    if row[0]:
+        print 'Month : ' + month
+        print 'Amount $: ' + amount
 
 print 'Done'
 

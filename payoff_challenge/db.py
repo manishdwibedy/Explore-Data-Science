@@ -30,6 +30,11 @@ rows = cur.fetchall()
 
 print 'Total loan amount : $ ' + str(rows[0])
 
+cur.execute("""SELECT AVG(funded_amnt) from lending_club_2007_2011 GROUP BY issue_d""")
+
+rows = cur.fetchall()
+
+print 'Total loan amount : $ ' + str(rows[0][0])
 
 print 'Done'
 

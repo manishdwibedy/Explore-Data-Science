@@ -68,5 +68,13 @@ for row in rows:
         print 'Month : ' + month
         print 'Amount $: ' + amount
 
+
+print '\n\nAverage Monthly Loan Amount :'
+cur.execute("""SELECT COUNT(*) from lending_club_2007_2011 GROUP BY grade""")
+
+rows = cur.fetchall()
+
+print 'Number of grades : ' + str(len(rows))
+
 print 'Done'
 

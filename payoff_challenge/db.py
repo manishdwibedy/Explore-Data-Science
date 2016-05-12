@@ -14,6 +14,13 @@ cur.execute("""SELECT COUNT(id) from lending_club_2007_2011""")
 
 rows = cur.fetchall()
 
-print rows[0][0]
+print 'Number of rows : ' + str(rows[0][0])
+
+cur.execute("""SELECT SUM(funded_amnt) from lending_club_2007_2011""")
+
+rows = cur.fetchall()
+
+print 'Total loan amount : ' + str(rows[0][0])
+
 
 print 'Done'

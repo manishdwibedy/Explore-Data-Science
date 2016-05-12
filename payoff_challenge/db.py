@@ -10,10 +10,10 @@ conn = psycopg2.connect(database=dbname, user=user, password=password, host=host
 
 cur = conn.cursor()
 
-cur.execute("""SELECT * from lending_club_2007_2011""")
+cur.execute("""SELECT COUNT(id) from lending_club_2007_2011""")
 
 rows = cur.fetchall()
 
-print 'Number of rows :' + len(rows)
+print rows[0][0]
 
 print 'Done'

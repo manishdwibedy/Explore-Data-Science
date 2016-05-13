@@ -133,14 +133,26 @@ def print_subgrade_info(sub_grade_info):
         for sub_grade in sorted(sub_grade_list):
             print 'Subgrade : ' + sub_grade,
             print "\tAverage Loan Rate : {0:.3f}%".format(sub_grade_info[grade][sub_grade]['average'])
+        print '\n\n'
 
-    pass
+def print_grade_info(grade_info):
+    '''
+    Printing the average interest rate on the basis of sub-grade
+    :param grade_info: the computation of average interest rate on the basis of sub-grade
+    :return: None
+    '''
+    grade_list = grade_info.keys()
+
+    for grade in sorted(grade_list):
+        print 'Grade ' + grade
+        print "Average Loan Rate : {0:.3f}%".format(grade_info[grade]['average'])
+
 if __name__ == '__main__':
     db_connection = get_db_connection()
 
     print 'Segregating on the basis of grades'
     info = question_2(db_connection)
-    print info
+    print_grade_info(info)
 
     print '\n\nSegregating on the basis of sub_grades'
     info = question_2_subgrade(db_connection)

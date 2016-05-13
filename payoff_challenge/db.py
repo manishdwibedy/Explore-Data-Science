@@ -27,8 +27,8 @@ class DB(object):
         self.getInput()
         if not self.error:
             try:
-                conn = psycopg2.connect(database=config.dbname, user=self.user, password=self.password, host=config.host, port=config.port, sslmode='require')
-                return conn
+                self.connection = psycopg2.connect(database=config.dbname, user=self.user, password=self.password, host=config.host, port=config.port, sslmode='require')
+                return self.connection
             except psycopg2.OperationalError, error:
                 print 'Error occurred!!'
                 print error

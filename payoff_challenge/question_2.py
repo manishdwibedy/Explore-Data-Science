@@ -15,8 +15,6 @@ def get_db_connection():
     else:
         sys.exit(1)
 
-# SELECT grade, AVG(CAST(substring(int_rate from '.*%')) AS INTEGER ) from lending_club_2007_2011
-
 def question_2(db_connection):
 
     average_grade = {}

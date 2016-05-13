@@ -35,3 +35,6 @@ class DB_Connection(object):
                 return None
         else:
             return None
+
+if __name__ == '__main__':
+    print DB_Connection().getConnection()

@@ -36,5 +36,11 @@ class DB(object):
         else:
             return None
 
+    def query(self, query):
+        cursor = self.connection.cursor()
+        cursor.execute("""SELECT COUNT(id) from lending_club_2007_2011""")
+        rows = cursor.fetchall()
+        return rows
+
 if __name__ == '__main__':
     print DB().getConnection()

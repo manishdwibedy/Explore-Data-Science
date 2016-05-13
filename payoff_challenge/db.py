@@ -1,9 +1,23 @@
 import psycopg2
+import config
+import os
+import sys
 
-dbname = "intern"
-host = "payoff-showtime.ctranyfsb6o1.us-east-1.rds.amazonaws.com"
-port = 5432
-conn = psycopg2.connect(database=dbname, user=user, password=password, host=host, port=port, sslmode='require')
+userNameFound = False
+passwordFound = False
+if 'username' in os.environ:
+    user = os.environ.data['username']
+    userNameFound = True
+
+if 'password' in os.environ:
+    password = os.environ['password']
+    passwordFound = True
+
+if not userNameFound or not passwordFound:
+    print 'Please enter the username and password of the database in the environment variables.'
+    sys.exit(1)
+
+conn = psycopg2.connect(database=config.dbname, user=user, password=password, host=config.host, port=config.port, sslmode='require')
 
 cur = conn.cursor()
 

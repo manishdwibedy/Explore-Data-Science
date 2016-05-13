@@ -1,4 +1,4 @@
-import db_connection
+import db
 import sys
 
 def get_db_connection():

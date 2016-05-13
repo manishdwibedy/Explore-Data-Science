@@ -1,0 +1,201 @@
+Segregating on the basis of sub_grades
+Grade A
+Subgrade : 1
+	Minimum Loan Rate : 5.320%
+	Minimum Loan Year : 2015
+	Maximum Loan Rate : 7.370%
+	Maximum Loan Year : 2007_2011
+Subgrade : 2
+	Minimum Loan Rate : 5.790%
+	Minimum Loan Year : 2007-2011
+	Maximum Loan Rate : 7.680%
+	Maximum Loan Year : 2007_2011
+Subgrade : 3
+	Minimum Loan Rate : 6.170%
+	Minimum Loan Year : 2007-2011
+	Maximum Loan Rate : 8.000%
+	Maximum Loan Year : 2007_2011
+Subgrade : 4
+	Minimum Loan Rate : 6.000%
+	Minimum Loan Year : 2007-2011
+	Maximum Loan Rate : 9.320%
+	Maximum Loan Year : 2007_2011
+Subgrade : 5
+	Minimum Loan Rate : 6.000%
+	Minimum Loan Year : 2012-2013
+	Maximum Loan Rate : 9.630%
+	Maximum Loan Year : 2007_2011
+
+
+
+Grade B
+Subgrade : 1
+	Minimum Loan Rate : 6.000%
+	Minimum Loan Year : 2007-2011
+	Maximum Loan Rate : 11.140%
+	Maximum Loan Year : 2007_2011
+Subgrade : 2
+	Minimum Loan Rate : 6.000%
+	Minimum Loan Year : 2007-2011
+	Maximum Loan Rate : 11.480%
+	Maximum Loan Year : 2007_2011
+Subgrade : 3
+	Minimum Loan Rate : 6.000%
+	Minimum Loan Year : 2007-2011
+	Maximum Loan Rate : 12.120%
+	Maximum Loan Year : 2012_2013
+Subgrade : 4
+	Minimum Loan Rate : 6.000%
+	Minimum Loan Year : 2012-2013
+	Maximum Loan Rate : 13.110%
+	Maximum Loan Year : 2012_2013
+Subgrade : 5
+	Minimum Loan Rate : 6.000%
+	Minimum Loan Year : 2007-2011
+	Maximum Loan Rate : 14.090%
+	Maximum Loan Year : 2012_2013
+
+
+
+Grade C
+Subgrade : 1
+	Minimum Loan Rate : 6.000%
+	Minimum Loan Year : 2012-2013
+	Maximum Loan Rate : 14.330%
+	Maximum Loan Year : 2012_2013
+Subgrade : 2
+	Minimum Loan Rate : 6.000%
+	Minimum Loan Year : 2012-2013
+	Maximum Loan Rate : 15.310%
+	Maximum Loan Year : 2012_2013
+Subgrade : 3
+	Minimum Loan Rate : 6.000%
+	Minimum Loan Year : 2012-2013
+	Maximum Loan Rate : 15.800%
+	Maximum Loan Year : 2012_2013
+Subgrade : 4
+	Minimum Loan Rate : 6.000%
+	Minimum Loan Year : 2007-2011
+	Maximum Loan Rate : 16.290%
+	Maximum Loan Year : 2012_2013
+Subgrade : 5
+	Minimum Loan Rate : 6.000%
+	Minimum Loan Year : 2007-2011
+	Maximum Loan Rate : 17.270%
+	Maximum Loan Year : 2012_2013
+
+
+
+Grade D
+Subgrade : 1
+	Minimum Loan Rate : 6.000%
+	Minimum Loan Year : 2007-2011
+	Maximum Loan Rate : 17.770%
+	Maximum Loan Year : 2012_2013
+Subgrade : 2
+	Minimum Loan Rate : 6.000%
+	Minimum Loan Year : 2007-2011
+	Maximum Loan Rate : 18.550%
+	Maximum Loan Year : 2012_2013
+Subgrade : 3
+	Minimum Loan Rate : 6.000%
+	Minimum Loan Year : 2012-2013
+	Maximum Loan Rate : 19.200%
+	Maximum Loan Year : 2012_2013
+Subgrade : 4
+	Minimum Loan Rate : 6.000%
+	Minimum Loan Year : 2012-2013
+	Maximum Loan Rate : 19.520%
+	Maximum Loan Year : 2012_2013
+Subgrade : 5
+	Minimum Loan Rate : 6.000%
+	Minimum Loan Year : 2007-2011
+	Maximum Loan Rate : 20.310%
+	Maximum Loan Year : 2012_2013
+
+
+
+Grade E
+Subgrade : 1
+	Minimum Loan Rate : 6.000%
+	Minimum Loan Year : 2012-2013
+	Maximum Loan Rate : 21.000%
+	Maximum Loan Year : 2012_2013
+Subgrade : 2
+	Minimum Loan Rate : 6.000%
+	Minimum Loan Year : 2007-2011
+	Maximum Loan Rate : 21.700%
+	Maximum Loan Year : 2012_2013
+Subgrade : 3
+	Minimum Loan Rate : 6.000%
+	Minimum Loan Year : 2007-2011
+	Maximum Loan Rate : 22.400%
+	Maximum Loan Year : 2012_2013
+Subgrade : 4
+	Minimum Loan Rate : 6.000%
+	Minimum Loan Year : 2007-2011
+	Maximum Loan Rate : 23.100%
+	Maximum Loan Year : 2012_2013
+Subgrade : 5
+	Minimum Loan Rate : 6.000%
+	Minimum Loan Year : 2007-2011
+	Maximum Loan Rate : 23.400%
+	Maximum Loan Year : 2012_2013
+
+
+
+Grade F
+Subgrade : 1
+	Minimum Loan Rate : 15.010%
+	Minimum Loan Year : 2007-2011
+	Maximum Loan Rate : 23.700%
+	Maximum Loan Year : 2012_2013
+Subgrade : 2
+	Minimum Loan Rate : 6.000%
+	Minimum Loan Year : 2015
+	Maximum Loan Rate : 24.080%
+	Maximum Loan Year : 2012_2013
+Subgrade : 3
+	Minimum Loan Rate : 15.650%
+	Minimum Loan Year : 2007-2011
+	Maximum Loan Rate : 24.500%
+	Maximum Loan Year : 2012_2013
+Subgrade : 4
+	Minimum Loan Rate : 6.000%
+	Minimum Loan Year : 2012-2013
+	Maximum Loan Rate : 25.090%
+	Maximum Loan Year : 2015
+Subgrade : 5
+	Minimum Loan Rate : 6.000%
+	Minimum Loan Year : 2012-2013
+	Maximum Loan Rate : 26.060%
+	Maximum Loan Year : 2015
+
+
+
+Grade G
+Subgrade : 1
+	Minimum Loan Rate : 6.000%
+	Minimum Loan Year : 2014
+	Maximum Loan Rate : 26.990%
+	Maximum Loan Year : 2015
+Subgrade : 2
+	Minimum Loan Rate : 6.000%
+	Minimum Loan Year : 2014
+	Maximum Loan Rate : 27.490%
+	Maximum Loan Year : 2015
+Subgrade : 3
+	Minimum Loan Rate : 17.220%
+	Minimum Loan Year : 2007-2011
+	Maximum Loan Rate : 27.990%
+	Maximum Loan Year : 2015
+Subgrade : 4
+	Minimum Loan Rate : 17.540%
+	Minimum Loan Year : 2007-2011
+	Maximum Loan Rate : 28.490%
+	Maximum Loan Year : 2015
+Subgrade : 5
+	Minimum Loan Rate : 17.860%
+	Minimum Loan Year : 2007-2011
+	Maximum Loan Rate : 28.990%
+	Maximum Loan Year : 2015

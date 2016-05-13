@@ -62,9 +62,14 @@ def question_1(db_connection):
                 average_monthly_loan_info[year] = data1
         else:
             print 'Invalid date'
-    return total_monthly_loan_info
+    return {
+        'average': average_monthly_loan_info,
+        'total': total_monthly_loan_info
+    }
 
 if __name__ == '__main__':
     db_connection = get_db_connection()
 
-    question_1(db_connection)
+    info = question_1(db_connection)
+
+    pass

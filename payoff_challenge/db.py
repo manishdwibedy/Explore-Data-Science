@@ -3,16 +3,21 @@ import config
 import os
 import sys
 
+# By default the username and password have not been found
 userNameFound = False
 passwordFound = False
+
+# Checking if the username is present in the environment variable
 if 'username' in os.environ:
     user = os.environ.data['username']
     userNameFound = True
 
+# Checking if the password is present in the environment variable
 if 'password' in os.environ:
     password = os.environ['password']
     passwordFound = True
 
+# If either username or password was not found, then exit displaying the erro
 if not userNameFound or not passwordFound:
     print 'Please enter the username and password of the database in the environment variables.'
     sys.exit(1)

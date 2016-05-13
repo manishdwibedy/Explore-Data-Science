@@ -2,7 +2,7 @@ import os
 import psycopg2
 import config
 
-class DB_Connection(object):
+class DB(object):
     def __init__(self):
         # By default the username and password have not been found
         self.error = False

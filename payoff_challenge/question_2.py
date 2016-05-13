@@ -66,4 +66,4 @@ if __name__ == '__main__':
 
     info = question_2(db_connection)
 
-    pass
+    print info

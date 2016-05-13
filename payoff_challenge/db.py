@@ -36,8 +36,8 @@ class DB(object):
         else:
             return None
 
-    def query(self, query):
-        cursor = self.connection.cursor()
+    def query(self, connection, query):
+        cursor = connection.cursor()
         cursor.execute(query)
         rows = cursor.fetchall()
         return rows

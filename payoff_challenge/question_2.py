@@ -111,15 +111,10 @@ def question_2_subgrade(db_connection):
         subgrade = grade[1:]
         grade = grade[:1]
 
-        sub_grade_info = {}
-        sub_grade_info[subgrade] = grade_info
-
-        sub_grade_list = []
         if grade in final_grade_info:
-            data = final_grade_info[grade]
-            data.append(sub_grade_info)
+            final_grade_info[grade][subgrade] = grade_info
         else:
-            final_grade_info[grade] = [sub_grade_info]
+            final_grade_info[grade] = {subgrade: grade_info}
 
     return final_grade_info
 
@@ -133,4 +128,4 @@ if __name__ == '__main__':
     print '\n\nSegregating on the basis of sub_grades'
     info = question_2_subgrade(db_connection)
 
-    print info
+    print_subgrade_info(info)

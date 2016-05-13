@@ -21,11 +21,12 @@ def question_2(db_connection):
 
     average_grade = {}
     for table in config.tables:
-        # overlay(int_rate placing '' for 1 from 5 )
+        # The data in tables other than 2015 has interest rate as string with a %
         if '2015' not in table:
             query = "SELECT grade, AVG(CAST(TRIM(SUBSTRING(int_rate, 1, 6)) AS FLOAT)), COUNT(GRADE) from " + table \
                 + " WHERE int_rate IS NOT NULL AND octet_length(int_rate) > 1 group by grade"
             rows = db.DB().query(db_connection, query)
+        # The data in 2015 table has interest rate as float without the % symbol
         else:
             query = "SELECT grade, AVG(int_rate), COUNT(GRADE) from " + table \
                 + " group by grade"

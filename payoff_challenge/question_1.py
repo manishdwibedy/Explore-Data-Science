@@ -19,14 +19,16 @@ def question_1(db_connection):
 
     total_rows = []
     for table in config.tables:
-        query = "SELECT SUM(funded_amnt),issue_d from " + table + " GROUP BY issue_d ORDER BY issue_d DESC"
+        query = "SELECT SUM(funded_amnt), AVG(funded_amnt), issue_d from " + table + " GROUP BY issue_d ORDER BY issue_d DESC"
         rows = db.DB().query(db_connection, query)
         total_rows.extend(rows)
 
     total_monthly_loan_info = {}
+    average_monthly_loan_info = {}
     for loan in total_rows:
         total_amount = loan[0]
-        date = loan[1]
+        average_amount = loan[1]
+        date = loan[2]
 
         date_info = date.split('-')
         if len(date_info) == 2:
@@ -39,13 +41,25 @@ def question_1(db_connection):
                     'month': month,
                     'amount': total_amount
                 })
+
+                data1 = average_monthly_loan_info[year]
+                data1.append({
+                    'month': month,
+                    'amount': average_amount
+                })
             else:
                 data = []
+                data1 = []
                 data.append({
                     'month': month,
                     'amount': total_amount
                 })
+                data1.append({
+                    'month': month,
+                    'amount': average_amount
+                })
                 total_monthly_loan_info[year] = data
+                average_monthly_loan_info[year] = data1
         else:
             print 'Invalid date'
     return total_monthly_loan_info

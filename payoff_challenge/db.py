@@ -38,7 +38,7 @@ class DB(object):
 
     def query(self, query):
         cursor = self.connection.cursor()
-        cursor.execute("""SELECT COUNT(id) from lending_club_2007_2011""")
+        cursor.execute(query)
         rows = cursor.fetchall()
         return rows
 

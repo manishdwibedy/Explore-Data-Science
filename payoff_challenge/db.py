@@ -37,4 +37,4 @@ class DB(object):
             return None
 
 if __name__ == '__main__':
-    print DB_Connection().getConnection()
+    print DB().getConnection()

@@ -1,218 +1,78 @@
 Segregating on the basis of grades
-{
-	'A': {
-		'count': 148203,
-		'average': 7.243240825085751
-	},
-	'C': {
-		'count': 245860,
-		'average': 13.979989546898166
-	},
-	'B': {
-		'count': 254535,
-		'average': 10.82955962834176
-	},
-	'E': {
-		'count': 70705,
-		'average': 19.89681889540823
-	},
-	'D': {
-		'count': 139543,
-		'average': 17.17565925914978
-	},
-	'G': {
-		'count': 5489,
-		'average': 25.61948624521742
-	},
-	'F': {
-		'count': 23047,
-		'average': 23.58205449733026
-	}
-}
+Grade A
+Average Loan Rate : 7.243%
+Grade B
+Average Loan Rate : 10.830%
+Grade C
+Average Loan Rate : 13.980%
+Grade D
+Average Loan Rate : 17.176%
+Grade E
+Average Loan Rate : 19.897%
+Grade F
+Average Loan Rate : 23.582%
+Grade G
+Average Loan Rate : 25.619%
 
 
 Segregating on the basis of sub_grades
-{
-	'A': [{
-		'1': {
-			'count': 22914,
-			'average': 5.712001396525997
-		}
-	}, {
-		'3': {
-			'count': 23457,
-			'average': 7.141020164556379
-		}
-	}, {
-		'2': {
-			'count': 22485,
-			'average': 6.4258590171222805
-		}
-	}, {
-		'5': {
-			'count': 44816,
-			'average': 8.269428552304948
-		}
-	}, {
-		'4': {
-			'count': 34531,
-			'average': 7.529181315338868
-		}
-	}],
-	'C': [{
-		'3': {
-			'count': 50161,
-			'average': 14.016185283388845
-		}
-	}, {
-		'2': {
-			'count': 52236,
-			'average': 13.423192434336567
-		}
-	}, {
-		'1': {
-			'count': 53387,
-			'average': 12.892131605069137
-		}
-	}, {
-		'4': {
-			'count': 48857,
-			'average': 14.598071105470167
-		}
-	}, {
-		'5': {
-			'count': 41219,
-			'average': 15.317942938934747
-		}
-	}],
-	'B': [{
-		'4': {
-			'count': 55626,
-			'average': 11.744784093768303
-		}
-	}, {
-		'5': {
-			'count': 48833,
-			'average': 12.269169004566145
-		}
-	}, {
-		'1': {
-			'count': 44972,
-			'average': 8.948791247885984
-		}
-	}, {
-		'2': {
-			'count': 48781,
-			'average': 9.996513396611661
-		}
-	}, {
-		'3': {
-			'count': 56323,
-			'average': 10.900721019830522
-		}
-	}],
-	'E': [{
-		'1': {
-			'count': 18268,
-			'average': 18.82632855265965
-		}
-	}, {
-		'3': {
-			'count': 14134,
-			'average': 19.969337767086852
-		}
-	}, {
-		'5': {
-			'count': 9575,
-			'average': 21.680796866841217
-		}
-	}, {
-		'4': {
-			'count': 11724,
-			'average': 20.779785909247114
-		}
-	}, {
-		'2': {
-			'count': 17004,
-			'average': 19.373250411667584
-		}
-	}],
-	'D': [{
-		'4': {
-			'count': 25558,
-			'average': 17.90330503169449
-		}
-	}, {
-		'5': {
-			'count': 21389,
-			'average': 18.41665061480087
-		}
-	}, {
-		'2': {
-			'count': 29803,
-			'average': 16.847349595678523
-		}
-	}, {
-		'3': {
-			'count': 26555,
-			'average': 17.340480135566683
-		}
-	}, {
-		'1': {
-			'count': 36238,
-			'average': 16.07921518847376
-		}
-	}],
-	'G': [{
-		'5': {
-			'count': 576,
-			'average': 25.693454861111125
-		}
-	}, {
-		'4': {
-			'count': 663,
-			'average': 25.622428355957684
-		}
-	}, {
-		'3': {
-			'count': 981,
-			'average': 25.842976554536175
-		}
-	}, {
-		'2': {
-			'count': 1398,
-			'average': 25.661487839770988
-		}
-	}, {
-		'1': {
-			'count': 1871,
-			'average': 25.447108498129378
-		}
-	}],
-	'F': [{
-		'1': {
-			'count': 7219,
-			'average': 22.606369303227513
-		}
-	}, {
-		'2': {
-			'count': 5392,
-			'average': 23.313592359050357
-		}
-	}, {
-		'3': {
-			'count': 4433,
-			'average': 23.970559440559523
-		}
-	}, {
-		'4': {
-			'count': 3409,
-			'average': 24.48949251980073
-		}
-	}, {
-		'5': {
-			'count': 2594,
-			'average': 24.998909020817127
-		}
-	}]
-}
+Grade A
+Subgrade : 1 	Average Loan Rate : 5.712%
+Subgrade : 2 	Average Loan Rate : 6.426%
+Subgrade : 3 	Average Loan Rate : 7.141%
+Subgrade : 4 	Average Loan Rate : 7.529%
+Subgrade : 5 	Average Loan Rate : 8.269%
+
+
+
+Grade B
+Subgrade : 1 	Average Loan Rate : 8.949%
+Subgrade : 2 	Average Loan Rate : 9.997%
+Subgrade : 3 	Average Loan Rate : 10.901%
+Subgrade : 4 	Average Loan Rate : 11.745%
+Subgrade : 5 	Average Loan Rate : 12.269%
+
+
+
+Grade C
+Subgrade : 1 	Average Loan Rate : 12.892%
+Subgrade : 2 	Average Loan Rate : 13.423%
+Subgrade : 3 	Average Loan Rate : 14.016%
+Subgrade : 4 	Average Loan Rate : 14.598%
+Subgrade : 5 	Average Loan Rate : 15.318%
+
+
+
+Grade D
+Subgrade : 1 	Average Loan Rate : 16.079%
+Subgrade : 2 	Average Loan Rate : 16.847%
+Subgrade : 3 	Average Loan Rate : 17.340%
+Subgrade : 4 	Average Loan Rate : 17.903%
+Subgrade : 5 	Average Loan Rate : 18.417%
+
+
+
+Grade E
+Subgrade : 1 	Average Loan Rate : 18.826%
+Subgrade : 2 	Average Loan Rate : 19.373%
+Subgrade : 3 	Average Loan Rate : 19.969%
+Subgrade : 4 	Average Loan Rate : 20.780%
+Subgrade : 5 	Average Loan Rate : 21.681%
+
+
+
+Grade F
+Subgrade : 1 	Average Loan Rate : 22.606%
+Subgrade : 2 	Average Loan Rate : 23.314%
+Subgrade : 3 	Average Loan Rate : 23.971%
+Subgrade : 4 	Average Loan Rate : 24.489%
+Subgrade : 5 	Average Loan Rate : 24.999%
+
+
+
+Grade G
+Subgrade : 1 	Average Loan Rate : 25.447%
+Subgrade : 2 	Average Loan Rate : 25.661%
+Subgrade : 3 	Average Loan Rate : 25.843%
+Subgrade : 4 	Average Loan Rate : 25.622%
+Subgrade : 5 	Average Loan Rate : 25.693%

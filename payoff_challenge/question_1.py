@@ -23,7 +23,7 @@ def question_1(db_connection):
         rows = db.DB().query(db_connection, query)
         total_rows.extend(rows)
 
-    loan_info = {}
+    total_monthly_loan_info = {}
     for loan in total_rows:
         total_amount = loan[0]
         date = loan[1]
@@ -33,8 +33,8 @@ def question_1(db_connection):
             month = date_info[0]
             year = date_info[1]
 
-            if year in loan_info:
-                data = loan_info[year]
+            if year in total_monthly_loan_info:
+                data = total_monthly_loan_info[year]
                 data.append({
                     'month': month,
                     'amount': total_amount
@@ -45,10 +45,10 @@ def question_1(db_connection):
                     'month': month,
                     'amount': total_amount
                 })
-                loan_info[year] = data
+                total_monthly_loan_info[year] = data
         else:
             print 'Invalid date'
-    return loan_info
+    return total_monthly_loan_info
 
 if __name__ == '__main__':
     db_connection = get_db_connection()

@@ -1,0 +1,28 @@
+------------
+NoSQL vs SQL
+------------
+
+SQL related to a fixed structured data storage mechanisms, whereas NoSQL is more of a flexible in its data storage.
+
+Thereby, NoSQL typically are more easily scalable in terms of horizontal scaling i.e. using multiple commodity servers. Whereas SQL needs more of vertical scaling i.e. using bigger servers to handle scalability.
+
+Furthermore, due to these properties, NoSQL doesn't support ACID properties, transactions and joins, as SQL supports inherently.
+
+
+---------
+MapReduce
+---------
+
+This is a technique which utilizes the distributed approach to help solve big data issues of scaling and flexibility. In the map phase, the data is splitted into smaller chunks of tasks. Any
+
+
+
+-------------
+Random Forest
+-------------
+
+It's simply a set of decision trees that would eventually help us to predict the label of the input feature vector. Instead of relying on only one decision tree, which might lead of over-fitting, we use multiple decision tree to help us predict the label. Internally, we can either take the label which is in majority OR use a complex function, which assigns some pre-defined weights to each of decision trees.
+
+ Mathematically, decision trees can grow very deep tend to learn highly irregular patterns. Thus they tend to overfit the training sets, because they have low bias, but very high variance. Although, the decision trees can be pruned, at the cost of accuracy.
+
+ On the other hand, random forests average out the final results, with the goal of reducing the variance.However, this comes at the expense of a small increase in the bias and some loss of interpretability, but generally greatly boosts the performance of the final model, as compared to the decison trees.

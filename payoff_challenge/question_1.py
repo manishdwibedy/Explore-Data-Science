@@ -1,6 +1,7 @@
 import db
 import sys
 import config
+import json
 
 def get_db_connection():
     '''
@@ -39,29 +40,27 @@ def question_1(db_connection):
                 data = total_monthly_loan_info[year]
                 data.append({
                     'month': month,
-                    'amount': total_amount
+                    'amount': float(total_amount)
                 })
 
                 data1 = average_monthly_loan_info[year]
                 data1.append({
                     'month': month,
-                    'amount': average_amount
+                    'amount': float(average_amount)
                 })
             else:
                 data = []
                 data1 = []
                 data.append({
                     'month': month,
-                    'amount': total_amount
+                    'amount': float(total_amount)
                 })
                 data1.append({
                     'month': month,
-                    'amount': average_amount
+                    'amount': float(average_amount)
                 })
                 total_monthly_loan_info[year] = data
                 average_monthly_loan_info[year] = data1
-        else:
-            print 'Invalid date'
     return {
         'average': average_monthly_loan_info,
         'total': total_monthly_loan_info
@@ -72,4 +71,8 @@ if __name__ == '__main__':
 
     info = question_1(db_connection)
 
-    pass
+    print 'Segregation by average'
+    print json.dumps(info['average'],indent=2)
+
+    print 'Segregation by total'
+    print json.dumps(info['total'],indent=2)
